@@ -1,0 +1,187 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.masthead{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background:url('./images/rollmarimast.png');
+    background-size: cover;
+}
+.masthead .overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+    position: absolute;
+    top:0;
+    z-index: 1;
+    color:white;
+    text-shadow: 2px 2px 5px black;
+}
+.masthead .overlay .headers{
+    margin-top: 5%;
+    margin-left: 5%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in 0.5s;
+}
+.masthead .overlay h1{
+    font-size: 150px;
+    letter-spacing: 2px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.masthead .overlay h2{
+    font-size: 80px;
+    letter-spacing: 2px;
+    margin-left: 30%;
+    font-family: 'Nanum Brush Script', cursive;
+}
+.masthead .overlay .description{
+    position: absolute;
+    width:100%;
+    bottom: 40px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 30px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in 1.3s;
+}
+
+.menu{
+    padding: 90px 0;
+}
+.menu>h2{
+    font-size: xx-large;
+    padding: 0 5px;
+    border-bottom: solid 2px green;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.menu .collection{
+    width: 70%;
+    margin: auto;
+}
+.menu .collection h2{
+    font-size: x-large;
+    padding: 0 5px;
+    border-bottom: solid 2px green;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;    
+}
+.menu .collection>h3{
+    font-size: larger;
+    padding: 0 5px;
+    border-bottom: solid 2px green;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 10px;    
+}
+.menu .collection .itemContainer{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, max(240px));
+    gap: 30px 10px;
+}
+.menu .item img{
+    width: 100%;    
+    border-radius: 2%;
+}
+.menu .item h3{
+    text-align: center;
+    font-size: x-large;
+}
+.menu .dinner{
+    display:none;
+}
+
+.about{
+    padding:50px 0;
+    background-color:  rgb(252, 252, 252);
+}
+.about>h2{
+    font-size: xx-large;
+    padding: 0 5px;
+    border-bottom: solid 2px green;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.info{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.info .content{
+    margin: auto;
+    padding-top: 20px;
+    max-width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info .image {
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: auto;
+}
+.info .image img{
+    width:300px;
+}
+.location{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+.location h1{
+    margin-bottom: 10px;
+}
+
+.moreInfo{
+    padding-top: 30px;
+    margin:auto;
+    background-color: rgb(241, 241, 241);
+    display:flex;
+    justify-content: center;
+    height: 350px;
+}
+.moreInfo .infobox{
+    height: 200px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.moreInfo .infobox>h2{
+    padding-bottom: 10px;
+    border-bottom: solid 2px green;
+}
+.moreInfo .infobox>div, 
+.moreInfo .infobox>h2,
+.moreInfo .infobox>h3{
+    margin-top: 15px;
+}
+.moreInfo .hours{
+}
+.moreInfo .services{
+}
+.moreInfo .contact{
+}
+
+.footer{
+    padding-top: 70px;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    text-align: center;
+}
